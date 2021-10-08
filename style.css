@@ -1,0 +1,457 @@
+/* Headeren på forsiden sin farge og ramme er stylet med denne css koden. */
+.mydiv { grid-area: mydiv;  
+    border: 14px outset rgb(218, 83, 245);
+    background-color: rgb(29, 255, 236);    
+    text-align: center;}
+
+/* Fagmenyens bakgrunnsfarge og bredde er stylet med denne css koden. */
+.fagmeny { grid-area: fagmeny;
+    width: 400px; 
+    background-color: black;
+    margin-top: 4px;}
+
+/* Fagmenyens tekst, høyde og oppsett er stylet med denne css koden. */
+.fagmeny a {
+    color: rgb(0, 0, 0);
+    display: block; 
+    padding: 40px;
+    text-decoration: none;}
+
+/* Når man holder musen over knappene i fagmenyen, skifter de farge til grå. */
+.fagmeny a:hover {
+    background-color: #9b9a9b;}
+
+/* Overskriften hvor det står: "FAG" er stylet med denne css koden. */
+.fagmeny a.active {
+    background-color: #ffffff;
+    padding: 40px; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;}
+
+/* Bildet på forsiden sin størrelse og linjen rundt det er stylet 
+med denne css koden. */
+.bilde {
+    height: 73vh;
+    width: 113vh;
+    background-color: lavender;
+    border-radius: 10px;
+}
+
+/* Home knappen i fagmenyen er stylet med denne css koden. */
+.home {
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 4px;
+}
+
+/* Fargen på "Programmering" knappen i fagmenyen er stylet med denne css koden. */
+.rosa {
+    background-color: rgb(228, 51, 228);
+}    
+
+/* Fargen på "Medie" knappen i fagmenyen er stylet med denne css koden. */
+.lilla {
+    background-color: rgb(154, 164, 253);  
+    margin-top: 4px;
+}
+
+/* Fargen på "Teknologiforståelse" knappen i fagmenyen er stylet med denne css koden. */
+.turkis {
+    background-color: rgb(128, 245, 245);
+    margin-top: 4px;
+}
+    
+/* Forsiden på nettsiden og fagmenyen hører til og er stylet inni denne grid-containeren. */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'mydiv mydiv mydiv mydiv mydiv mydiv mydiv mydiv'
+    'fagmeny bilde bilde bilde bilde bilde bilde bilde';
+  grid-gap: 10px;
+  background-color: none;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: none ;
+  text-align: center;
+  padding: 8px;
+  font-size: 30px;
+}
+
+/* Dette er css koden til bakgrunnsbildet på nettsiden. */
+body {
+    background-image: url('Desert.jpeg');
+      background-color: #cccccc;
+}
+
+
+/* Programmering-forsiden på nettsiden hører til og er stylet inni denne grid-containeren. */
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+      'pdiv pdiv pdiv pdiv pdiv'
+      'fagmeny programmering programmering prosjekter prosjekter';
+   grid-gap: 10px;
+   background-color: none;
+   padding: 10px;
+}
+  
+.grid-container2 > div {
+    background-color: none ;
+    text-align: center;
+    padding: 8px;
+    font-size: 30px;
+}
+
+/* Headeren på Progrmmering-forsiden sin farge og ramme er stylet 
+med denne css koden. */
+.pdiv {grid-area: pdiv;
+    border: 14px outset rgba(48, 10, 48, 0.658);
+    background-color: rgb(228, 51, 228);    
+    text-align: center;
+}
+
+
+/* Dropdown knappen som heter "Programmering" på Programmering-forsiden sin farge, ramme, 
+størrelse, tekststørrelse og teksttype er stylet med denne css koden. */
+.programmering {grid-area: programmering;
+    background-color: rgb(228, 51, 228);
+    border: 10px outset rgba(48, 10, 48, 0.658);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+  /* Når man holder musen over dropdown knappen "Prosjekter", 
+skifter den farge til en mørkere rosa farge. */ 
+.dropdown:hover .programmering {
+    background-color: rgb(197, 45, 197);
+}  
+
+/* Boksen som kommer frem med innholdet under dropdown knappen
+"Programmering" på Programmering-forsiden er stylet med denne css koden */
+.dropdown-content1 {
+    display: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+}
+  
+  /* Boksenes tekst er stylet denne css koden. */
+  .dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  /* Fargen på boksene er stylet med denne css koden. */
+  .dropdown-content1 a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+/* Dropdown knappen som heter "Prosjekter" på Programmering-forsiden sin farge, ramme, 
+størrelse, tekststørrelse og teksttype er stylet med denne css koden. */
+.prosjekter{grid-area: prosjekter;
+    background-color: rgb(228, 51, 228);
+    border: 10px outset rgba(48, 10, 48, 0.658);
+    color: black;
+    width: 127%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Når man holder musen over dropdown knappen "Prosjekter", 
+skifter den farge til en mørkere rosa farge. */ 
+.dropdown:hover .prosjekter {
+    background-color: rgb(197, 45, 197);
+}
+
+/* Boksen som kommer frem med innholdet under dropdown knappen
+"Prosjekter" på Programmering-forsiden er stylet med denne css koden */
+.dropdown-content11 {
+    display: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 29px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+  }
+  
+  /* Boksenes tekst er stylet denne css koden. */
+  .dropdown-content11 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Fargen på boksene er stylet med denne css koden. */
+  .dropdown-content11 a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content11 {
+    display: block;
+  }
+
+/* Medie-forsiden på nettsiden hører til og er stylet inni denne grid-containeren. */
+.grid-container3 {
+    display: grid;
+    grid-template-areas:
+        'mdiv mdiv mdiv mdiv mdiv'
+        'fagmeny bilder bilder videoer videoer';
+    grid-gap: 1px;
+    background-color: none;
+    padding: 10px;
+}
+          
+.grid-container3 > div {
+    background-color: none ;
+    text-align: center;
+    padding: 8px;
+    font-size: 30px;
+}
+
+/* Headeren på Medie-forsiden sin farge og ramme er stylet med denne css koden. */
+.mdiv{grid-area: mdiv;  
+    border: 14px outset rgb(77, 93, 236);
+    background-color: rgb(154, 164, 253);    
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+
+/* Dropdown knappen som heter "Bilder" på Medie-forsiden sin farge, ramme, 
+størrelse, tekststørrelse og teksttype er stylet med denne css koden. */
+.bilder{grid-area: bilder; 
+    background-color: rgb(154, 164, 253);
+    border: 10px outset rgb(77, 93, 236);
+    width: 110%;
+    margin-right: 98px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/* Når man holder musen over dropdown knappen "Bilder", 
+skifter den farge til en mørkere lilla farge. */ 
+.dropdown:hover .bilder {
+    background-color: rgb(138, 150, 252);
+} 
+
+/* Boksen som kommer frem med innholdet under dropdown knappen
+"Bilder" på Medie-forsiden er stylet med denne css koden */
+.dropdown-content2 {
+    display: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+  }
+  
+  /* Boksenes tekst er stylet denne css koden. */
+  .dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Fargen på boksene er stylet med denne css koden. */
+  .dropdown-content2 a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content2 {
+    display: block;
+}
+
+/* Dropdown knappen som heter "Videoer" på Medie-forsiden sin farge, ramme, 
+størrelse, tekststørrelse og teksttype er stylet med denne css koden. */
+.videoer{grid-area: videoer;
+    background-color: rgb(154, 164, 253);
+    border: 10px outset rgb(77, 93, 236);
+    width: 110%;
+    margin-left: 50px; 
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+/* Når man holder musen over dropdown knappen "Videoer", 
+skifter den farge til en mørkere lilla farge. */ 
+.dropdown:hover .videoer {
+    background-color: rgb(138, 150, 252);
+} 
+
+/* Boksen som kommer frem med innholdet under dropdown knappen
+"Videoer" på Medie-forsiden er stylet med denne css koden */
+.dropdown-content22 {
+    display: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-left: 50px;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+  }
+  
+  /* Boksenes tekst er stylet denne css koden. */
+  .dropdown-content22 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Fargen på boksene er stylet med denne css koden. */
+  .dropdown-content22 a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content22 {
+    display: block;
+}
+
+/* Teknologiforståelse-forsiden på nettsiden hører til og er stylet 
+inni denne grid-containeren. */
+.grid-container4 {
+    display: grid;
+    grid-template-areas:
+     'tdiv tdiv tdiv tdiv tdiv'
+     'fagmeny oppgaver oppaver prosjekter2 prosjekter2';
+    grid-gap: 1px;
+    background-color: none;
+    padding: 10px;
+}
+              
+.grid-container4 > div {
+    background-color: none ;
+    text-align: center;
+    padding: 8px;
+    font-size: 30px;
+}
+
+/* Headeren på Teknologiforståelse-forsiden sin farge og ramme er stylet 
+med denne css koden. */
+.tdiv {grid-area: tdiv;
+    border: 14px outset rgba(3, 20, 20, 0.753);
+    background-color: rgb(128, 245, 245); 
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+
+/* Dropdown knappen som heter "Prosjekter" på Teknologiforståelse-forsiden sin farge, 
+ramme, størrelse, tekststørrelse og teksttype er stylet med denne css koden. */
+.prosjekter2 {grid-area: prosjekter2;
+    background-color: rgb(128, 245, 245);
+    border: 10px outset rgba(3, 20, 20, 0.753);
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+} 
+
+/* Når man holder musen over dropdown knappen "Prosjekter" på Teknologiforståelse-forsiden, 
+skifter den farge til en mørkere turkis farge. */ 
+.dropdown:hover .prosjekter2 {
+    background-color: rgb(106, 209, 209);}
+
+/* Boksen som kommer frem med innholdet under dropdown knappen
+"Prosjekter" på Teknologiforståelse-forsiden er stylet med denne css koden */
+.dropdown-content3 {
+    display: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+  }
+  
+/* Boksenes tekst er stylet denne css koden. */
+.dropdown-content3 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+/* Fargen på boksene er stylet med denne css koden. */
+.dropdown-content3 a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content3 {
+    display: block;
+}
+
+/* Dropdown knappen som heter "Oppgaver" på Teknologiforståelse-forsiden sin farge, ramme, 
+størrelse, tekststørrelse og teksttype er stylet med denne css koden. */   
+.oppgaver{grid-area: oppgaver;
+    background-color: rgb(128, 245, 245);
+    border: 10px outset rgba(3, 20, 20, 0.753);
+    width: 100%;
+    margin-left: 73px;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Når man holder musen over dropdown knappen "Oppgaver" på Teknologiforståelse-forsiden, 
+skifter den farge til en mørkere turkis farge. */ 
+.dropdown:hover .oppgaver {
+    background-color: rgb(106, 209, 209);} 
+
+/* Boksen som kommer frem med innholdet under dropdown knappen
+"Oppgaver" på Teknologiforståelse-forsiden er stylet med denne css koden */
+.dropdown-content33 {
+    display: none;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-left: 75px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 30px;
+  }
+  
+  /* Boksenes tekst er stylet denne css koden. */
+  .dropdown-content33 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Fargen på boksene er stylet med denne css koden. */
+  .dropdown-content33 a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content33 {
+    display: block;
+}
+
+
+
+
+
+

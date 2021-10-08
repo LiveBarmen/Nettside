@@ -1,0 +1,371 @@
+.myDiv {
+  border: 10px outset rgb(218, 83, 245);
+  background-color: rgb(29, 255, 236);    
+  text-align: center;
+  margin-bottom: 11px;
+}
+/* Disse divene er farge-boksene rundt overskriftene til hvert fag. */
+.Pdiv {
+  border: 10px outset rgba(48, 10, 48, 0.589);
+  background-color: rgb(228, 51, 228);    
+  text-align: center;
+  margin-bottom: 11px;        
+  } 
+
+
+.Mdiv {
+  border: 10px outset rgb(77, 93, 236);
+  background-color:  rgb(154, 164, 253);
+  text-align: center;
+  margin-bottom: 11px;
+  } 
+
+.Tdiv {
+  border: 10px outset rgb(28, 177, 177);
+  background-color:  rgb(128, 245, 245);
+  text-align: center;
+  margin-bottom: 11px;
+  }  
+
+/* Den vertikale menyen på forsiden av nettisden er stylet med disse css kodene*/
+.Fagmeny {
+ width: 480px; 
+ padding: 8px;
+ background-color: black;
+ 
+  margin-top: 4px;
+  font-size: larger;
+}
+
+.Fagmeny a {
+  color: rgb(0, 0, 0);
+  display: block; 
+  padding: 100px; 
+  text-decoration: none;  
+}
+/* Den vertikale menyen på hvert av fagene er stylet med disse css kodene. */
+.Fagmeny1 {
+  width: 400px; 
+  padding: 8px;
+ background-color: black;
+  margin-left: 10px;
+  margin-top: 40px;
+  font-size: larger;
+}
+.Fagmeny1 a {
+  color: rgb(0, 0, 0);
+  display: block; 
+  padding: 40px; 
+  text-decoration: none;  
+}
+
+.lilla {
+    background-color: rgb(228, 51, 228);
+}
+.lilla2 {
+  background-color: rgb(228, 51, 228);
+  font-size: xx-large;
+  font-weight: 600;
+}
+.lyselilla {
+  background-color: rgb(154, 164, 253);
+  margin-top: 4px;
+}
+.lyselilla2 {
+background-color: rgb(154, 164, 253);
+margin-top: 4px;
+font-size: xx-large;
+font-weight: 600;
+}
+
+.blå {
+  background-color: rgb(128, 245, 245);
+  margin-top: 4px;
+}
+.blå2 {
+background-color: rgb(128, 245, 245);
+margin-top: 4px;
+font-size: xx-large;
+font-weight: 700;
+}
+
+.Fagmeny a:hover {
+  background-color: #9b9a9b; 
+}
+.Fagmeny1 a:hover {
+  background-color: #9b9a9b; 
+}
+.Fagmeny a.active {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;}
+
+.Fagmeny1 a.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;}
+
+body {
+  background-image: url('Desert.jpeg');
+    background-color: #cccccc;
+  }
+.grid-container {
+   display: grid;
+   grid-template-areas:'menu menu menu menu';
+   grid-gap: 15px;
+   float: left
+}
+.grid-container div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-auto-rows: 150px;
+}
+
+.prodjects{
+  background-color: rgb(233, 103, 233);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+  
+
+}
+.products{
+  background-color: rgb(228, 51, 228);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+  
+}
+.production{
+  background-color: rgb(194, 34, 194);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+}
+
+
+.prodjects2{
+  background-color: rgb(176, 184, 253);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+}
+.products2{
+  background-color: rgb(154, 164, 253);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px; 
+}
+.production2{ 
+  background-color: rgb(126, 139, 250);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+}
+
+.prodjects3{
+  background-color: rgb(159, 245, 245);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+}
+.products3{
+  background-color: rgb(128, 245, 245);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px; 
+}
+.production3{ 
+  background-color: rgb(87, 214, 214);
+  border: 4px solid #ffffffcc;
+  border-radius: 10px;
+}
+
+.dropdown {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+/* Drop downene i "Programmering" dokumentet er stylet med disse css kodene*/
+.prodjects,
+.products
+ {
+  position: relative;
+}
+.prodjects ul, 
+.products ul{
+  background: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.prodjects a, 
+.products a{
+  color: black;
+  text-decoration: none;
+}
+
+.prodjects li, 
+.products li{
+  width: 100%;
+  height: 100%
+}
+.prodjects li:hover, 
+.products li:hover{
+  background-color: rgb(207, 207, 207);
+}
+.dropdown button,
+.home{
+  background: none;
+  width: 100%;
+  height: 100%;
+  border: white;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.dropdown button:hover, 
+.home:hover{
+  color: aliceblue;
+
+} 
+.prodjects button:focus + ul,
+.products button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Drop downene i "Medie" dokumentet er stylet med disse css kodene*/
+.prodjects2,
+.products2
+ {
+  position: relative;
+}
+.prodjects2 ul, 
+.products2 ul{
+  background: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.prodjects2 a, 
+.products2 a
+.production2 a{
+  color: black;
+  text-decoration: none;
+}
+
+.prodjects2 li, 
+.products2 li{
+  width: 100%;
+  height: 100%
+}
+.prodjects2 li:hover, 
+.products2 li:hover{
+  background-color: rgb(207, 207, 207);
+}
+.dropdown2 button,
+.home{
+  background: none;
+  width: 100%;
+  height: 100%;
+  border: white;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.dropdown2 button:hover, 
+.home:hover{
+  color: aliceblue;
+
+} 
+/* Drop downene i "Teknologiforståelse" dokumentet er stylet med disse css kodene*/
+.prodjects3 button:focus + ul,
+.products3 button:focus + ul,
+.production3 button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+}
+
+  
+.prodjects3,
+.products3
+ {
+  position: relative;
+}
+.prodjects3 ul, 
+.products3 ul{
+  background: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.prodjects3 a, 
+.products3 a
+.production3 a{
+  color: black;
+  text-decoration: none;
+}
+
+.prodjects3 li, 
+.products3 li{
+  width: 100%;
+  height: 100%
+}
+.prodjects3 li:hover, 
+.products3 li:hover{
+  background-color: rgb(207, 207, 207);
+}
+.dropdown3 button,
+.home{
+  background: none;
+  width: 100%;
+  height: 100%;
+  border: white;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.dropdown3 button:hover, 
+.home:hover{
+  color: aliceblue;
+
+} 
+.prodjects3 button:focus + ul,
+.products3 button:focus + ul,
+.production3 button:focus + ul{
+  opacity: 1;
+  pointer-events: all;
+}
+
+  
+  
